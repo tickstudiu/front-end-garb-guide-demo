@@ -1,0 +1,51 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+div.navbar-header img{
+	margin: 10px 10px;
+	float: left;
+}
+
+a.navbar-brand {
+	transition:1s ease;
+	padding: 15px 0;
+	margin-right: 10px;
+}
+
+div.navbar-login-from{
+	display: none;
+	float: left;
+}
+
+div.navbar-title{
+	font-family: 'Trocchi', serif;
+}
+
+a.btn-login {
+	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 15px 0;
+	width: 60px;
+	white-space: nowrap;
+    overflow: hidden;
+    transition:1s ease;
+    text-decoration: none;
+    color: #777;
+}
+
+a.btn-login:hover{
+	width: 120px;
+}
+
+@media only screen and (max-width: 768px){
+	div.navbar-login-from {
+		display: inline-block;
+	}
+
+	div.navbar-title {
+		width: 150px;
+		margin: 0 auto;
+	}
+}
