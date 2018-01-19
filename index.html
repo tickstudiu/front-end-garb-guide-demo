@@ -4,9 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>garb-guide</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-social.css">
+
+    <!--- add css file -->
+    <link href="assets/css/styles.css" rel="stylesheet" >
+
 </head>
 
 <body>
@@ -14,7 +19,7 @@
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <div class="navbar-login-from">
-                    <img src="assets/img/brand.svg" class="img-circle" width="30" height="30" alt="">
+                    <img src="assets/img/person.ico" class="img-circle" width="30" height="30" alt="">
                     <a class="btn-login" href="#">
                         Mr. Wanchalerm
                     </a> 
@@ -37,11 +42,54 @@
                     <li role="presentation"><a href="#">Second Item</a></li>
                     <li role="presentation"><a href="#">Third Item</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Button trigger modal -->
+                    <li role="presentation"><a href="#" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+                    <li role="presentation"><a href="#">ENG</a></li>
+                </ul>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <p>container </p>
+    <!-- popup login form -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- hender form -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!-- main form -->
+                        <img src="assets/img/person.ico" class="img-circle img-login-form" alt="wanchalerm suksawat">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Example label</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Another label</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                            </div>
+                        </form>
+                    <hr>
+                        <a class="btn btn-block btn-social btn-facebook">
+                            <span class="fa fa-facebook"></span> 
+                            Sign in with Facebook
+                        </a>
+                        <a class="btn btn-block btn-social btn-twitter">
+                            <span class="fa fa-twitter"></span> 
+                            Sign in with Twitter
+                        </a>
+                    <hr>
+                        <a href="#" style="text-align: center;">Don't have an account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main container -->
+    <div class="container">   
+        <p>
+            container 
+        </p>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

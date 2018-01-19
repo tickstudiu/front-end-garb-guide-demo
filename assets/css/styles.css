@@ -39,13 +39,28 @@ a.btn-login:hover{
 	width: 120px;
 }
 
+img.img-login-form{
+	width: 35%;
+	height: 35%;
+}
+
 @media only screen and (max-width: 768px){
 	div.navbar-login-from {
 		display: inline-block;
+	}
+
+	a.btn-login{
+		display: none;
 	}
 
 	div.navbar-title {
 		width: 150px;
 		margin: 0 auto;
 	}
+
+	img.img-login-form{
+	width: 22%;
+	height: 22%;
+	}
+
 }
