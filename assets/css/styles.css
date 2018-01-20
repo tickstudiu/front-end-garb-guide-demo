@@ -21,6 +21,7 @@ div.navbar-login-from{
 
 div.navbar-title{
 	font-family: 'Trocchi', serif;
+	margin-right: 50px;
 }
 
 a.btn-login {
@@ -35,13 +36,19 @@ a.btn-login {
     color: #777;
 }
 
-a.btn-login:hover{
-	width: 120px;
-}
-
-img.img-login-form{
+img.img-login-form {
 	width: 35%;
 	height: 35%;
+}
+
+div.header-login-form {
+	text-align: center;
+}
+
+div.header-login-form h1 {
+	padding-top: 85px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 768px){
@@ -57,6 +64,7 @@ img.img-login-form{
 		width: 150px;
 		margin: 0 auto;
 	}
+
 
 	img.img-login-form{
 	width: 22%;
