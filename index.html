@@ -21,7 +21,7 @@
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <div class="navbar-login-from">
-                    <img src="assets/img/person.ico" class="img-circle" width="30" height="30" alt="">
+                    <img src="assets/img/person.ico" data-toggle="modal" data-target="#myModal" class="img-circle mouse-pointer" width="30" height="30" alt="" >
                 </div>
                 <div class="navbar-title">
                     <img src="assets/img/brand.svg" width="30" height="30" alt="">
@@ -43,12 +43,13 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Button trigger modal -->
-                    <li role="presentation"><a href="#" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+                    <li role="presentation"><a href="#" class="btn-sign-in" data-toggle="modal" data-target="#myModal">Sign in</a></li>
                     <li role="presentation"><a href="#">ENG</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <!-- popup login form -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-sm" role="document">
