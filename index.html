@@ -37,7 +37,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="active" role="presentation"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Home</a></li>
                     <li role="presentation"><a href="#">Second Item</a></li>
                     <li role="presentation"><a href="#">Third Item</a></li>
                 </ul>
@@ -68,10 +68,10 @@
                                 <input type="text" class="form-control" id="user" placeholder="Username">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="pwd" placeholder="Password">
+                                <input type="password" class="form-control" id="pwd" placeholder="Password">
                             </div>
                             <div class="form-group">
-                                <button class="button" style="vertical-align:middle"><span>Submit </span>
+                                <button class="button"><span>Submit </span>
                             </div>
                         </form>
                     <hr>
@@ -84,10 +84,22 @@
                             Sign in with Google
                         </a>
                     <hr>
-                        <a href="#" style="text-align: center;">Don't have an account?</a>
+                        <div class="text-right">
+                            <a href="#">I forgot my password.</a>
+                            ||
+                            <a href="#">Don't have an account?</a>
+                        </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid top-jumbotron">
+        <div class="container">
+            <h1 class="display-3">JUMBOTRON</h1>      
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        </div> 
     </div>
 
     <!-- main container -->
@@ -96,6 +108,21 @@
             container 
         </p>
     </div>
+
+    <!-- footer -->
+    <footer>
+        <dir class="container">
+            <div>
+                footer-header
+            </div>
+            <div>
+                footer-main
+            </div>
+            <div>
+                footer-footer
+            </div>
+        </dir>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>

@@ -21,6 +21,7 @@ a.navbar-brand {
 div.navbar-login-from{
 	display: none;
 	float: left;
+	transition: all 0.25s;
 }
 
 div.navbar-title{
@@ -59,52 +60,80 @@ div.header-login-form h1 {
 	font-size: 50px;
 }
 
-input[type=text] {
-    padding: 24px 12px;
+input[type=text], input[type=password] {
+    padding: 20px 12px;
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 0;
     border-width: 3px;
 }
 
-.button {
-  display: inline-block;
-  border-radius: 0;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 18px;
-  padding: 22px 12px;
-  width: 180px;
-  transition: all 0.5s;
-  cursor: pointer;
+button.button {
+	width: 100%;
+  	display: inline-block;
+  	border-radius: 0;
+  	background-color: #FFA985;
+  	border: none;
+  	color: #FFFFFF;
+  	text-align: center;
+  	font-size: 18px;
+  	padding: 22px 12px;
+  	transition: all 0.5s;
+  	cursor: pointer;
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+button.button span {
+  	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
 }
+
+a.btn{
+	margin: 0 10%;
+	width: auto;
+}
+
 /* on destop */
 @media only screen and (min-width: 768px){
-	.button span:after {
-	  content: '\00bb';
-	  position: absolute;
-	  opacity: 0;
-	  top: 0;
-	  right: -20px;
-	  transition: 0.5s;
+	button.button span:after {
+	  	content: '\00bb';
+	  	position: absolute;
+	  	opacity: 0;
+	  	top: 0;
+	  	right: -20px;
+	  	transition: 0.5s;
 	}
 
-	.button:hover span {
-	  padding-right: 25px;
+	button.button:hover{
+		background-color: #FF6865;
 	}
 
-	.button:hover span:after {
-	  opacity: 1;
-	  right: 0;
+	button.button:hover span {
+	  	padding-right: 25px;
+	}
+
+	button.button:hover span:after {
+	 	opacity: 1;
+	  	right: 0;
+	}
+
+	.navbar-default{
+		background: rgba(0,0,0,0.03);
+		box-shadow: none;
+		border: 0;
+		margin: 0 0 250px 0;
+		border-radius: 0;
+	}
+
+	.top-jumbotron{
+		padding-top: 80px;
+		display: block;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
 	}
 
 }
@@ -112,10 +141,20 @@ input[type=text] {
 
 /* on moble */
 @media only screen and (max-width: 768px){
+	footer{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+
 	div.navbar-login-from {
 		display: inline-block;
 	}
 
+	div.navbar-login-from:hover {
+		opacity: 0.7;
+	}
 	a.btn-login{
 		display: none;
 	}
@@ -142,7 +181,12 @@ input[type=text] {
 		height: 22%;
 	}
 
-	.button {
+	a.btn{
+		margin: 0 0;
 		width: 100%;
+	}
+
+	.top-jumbotron{
+		display: none;
 	}
 }
