@@ -297,10 +297,6 @@ a.btn{
 
 /* on moble */
 @media only screen and (max-width: 768px){
-	body{
-		padding-top: 60px;
-	}
-
 	input[type=email] {
 		width: 100%;
 		margin-top: 15px;
@@ -374,13 +370,7 @@ a.btn{
 		border: 0;
 		background: rgb(239, 239, 239);
 		overflow-y: none;
-	}
-
-	.navbar-hidden-when-scroll-mb{
-		position: fixed;
-		top: 0;
-		width: 100%;
-		transition: top 0.2s ease-in-out;
+		margin-bottom: 35px; 
 	}
 
 	.navbar-collapse{
