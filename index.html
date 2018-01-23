@@ -14,11 +14,12 @@
     <!--- add css file -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-hidden-when-scroll-mb" id="nav">
             <div class="navbar-header">
                 <div class="navbar-login-from">
                     <img src="assets/img/person.ico" data-toggle="modal" data-target="#myModal" class="img-circle mouse-pointer" width="30" height="30" alt="" >
@@ -95,12 +96,13 @@
     </div>
 
     <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid top-jumbotron">
+    <div class="jumbotron jumbotron-fluid top-jumbotron hidden-sm hidden-xs">
         <div class="container">
             <h1 class="display-3">JUMBOTRON</h1>      
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         </div> 
     </div>
+
 
     <!-- main container -->
     <div class="container">   
@@ -109,21 +111,117 @@
         </p>
     </div>
 
-    <!-- footer -->
     <footer>
-        <dir class="container">
-            <div>
+
+        <!-- footer header-->
+        <div class="footer-header">
+            <div class="container">
                 footer-header
             </div>
-            <div>
-                footer-main
+        </div>
+
+        <!-- footer main-->
+        <div class="footer-main hidden-xs hidden-sm hidden-md">
+            <div class="container">
+                <div class="row text-center">
+                    <h3>header</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 footer-list">
+                        <ol>
+                            <li><a href="#">1-4</a></li>
+                            <li><a href="#">2-4</a></li>
+                            <li><a href="#">3-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-3 footer-list">
+                        <ol>
+                            <li><a href="#">1-4</a></li>
+                            <li><a href="#">2-4</a></li>
+                            <li><a href="#">3-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-3 footer-list">
+                        <ol>
+                            <li><a href="#">1-4</a></li>
+                            <li><a href="#">2-4</a></li>
+                            <li><a href="#">3-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                        </ol>
+                    </div>
+                   <div class="col-lg-3 col-md-3 footer-list">
+                        <ol>
+                            <li><a href="#">1-4</a></li>
+                            <li><a href="#">2-4</a></li>
+                            <li><a href="#">3-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                            <li><a href="#">4-4</a></li>
+                        </ol>
+                    </div>
+                </div>     
             </div>
-            <div>
-                footer-footer
+        </div>
+
+        <div class="footer-main-sub hidden-xs hidden-sm hidden-lg hidden-xl">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        1
+                    </div>
+                    <div class="col-md-3">
+                        2
+                    </div>
+                    <div class="col-md-3">
+                        3
+                    </div>
+                    <div class="col-md-3">
+                        4
+                    </div>
+                </div>
             </div>
-        </dir>
+        </div>
+
+        <!-- footer footer-->
+        <div class="footer-footer hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <ol class="footer-breadcrumb text-center hidden-md hidden-sm hidden-xs">
+                        <li><a href="#">asdf</a></li>
+                        <li><a href="#">asdf</a></li>
+                        <li><a href="#">asdf</a></li>
+                    </ol>
+                </div>
+                <div class="row">
+                    <div class="text-center hidden-sm hidden-xs">
+                        <a href="#">garb-guide.com</a> เว็บที่ช่วยให้การเดินทางเป็นเรื่องง่ายเมื่อคุณเรียกใช้เรา
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <section class="copy-right">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <p>copy right © by garb guide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
