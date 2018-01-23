@@ -16,6 +16,10 @@ footer{
 	cursor: pointer;
 }
 
+div.footer-main-sub{
+	padding: 20px 0; 
+}
+
 section.copy-right{
 	padding: 15px 0;
 	background-color: #349156;
