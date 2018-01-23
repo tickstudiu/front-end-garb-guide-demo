@@ -1,10 +1,107 @@
 body{
 	padding: 0;
 	margin: 0;
+	color: #666666;
+}
+
+p{
+	margin: 0;
+}
+
+footer{
+	margin-top: 30px;
+	width: 100%;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: ;
+}
+
+.navbar-default .navbar-brand{
+	color: ;
+	transition: all 0.25s ease-in-out;
+}
+
+.navbar-default{
+	background: rgb(239, 239, 239);
+	box-shadow: none;
+	border: 0;
+	margin: 0 0 250px 0;
+	border-radius: 0;
 }
 
 .mouse-pointer{
 	cursor: pointer;
+}
+
+
+.non-margin{
+	margin: 0;
+}
+
+p.sub-body{
+	padding-bottom: 20px;
+}
+
+div.footer-main-sub{
+	background-color: #f9f9f9;
+	padding: 20px 0; 
+}
+
+section.copy-right{
+	padding: 15px 0;
+	background-color: #262626;
+	font-weight: bold;
+	color: #FFFFFF; 
+}
+
+div.top-jumbotron{
+	padding-top: 80px;
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: #f9f9f9;
+}
+
+div.footer-header{
+	padding: 35px 0;
+}
+
+div.footer-footer{
+	background-color: #333333;
+	font-weight: bold;
+	color: #cecece;
+	padding: 25px 0; 
+}
+
+div.footer-list ol{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+ol.footer-breadcrumb{
+	background-color: transparent;
+	padding-left: 0;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	margin: 0;
+}
+
+ol.footer-breadcrumb > li{
+	display: inline-block;
+	margin: 0;
+}
+
+ol.footer-breadcrumb > li + li:before{
+	content: "/\00a0";
+	padding: 0 5px;
+	color: #cccccc;
 }
 
 div.navbar-header img{
@@ -68,7 +165,37 @@ input[type=text], input[type=password] {
     border-width: 3px;
 }
 
-button.button {
+input[type=email] {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    line-height: 18px;
+    box-shadow: none;
+    border-width: 3px;
+    border-color: #CCCCCC;
+    border-style: solid;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+input[type=email]:focus {
+    border-color: #555555;
+}
+
+button.button-email{
+	display: inline-block;
+  	border-radius: 0;
+  	border: none;
+  	font-size: 18px;
+  	padding: 12px 35px;
+  	transition: all 0.5s;
+}
+
+button.button-email:hover{
+	background-color: #555555;
+	color: #FFFFFF;
+}
+
+button.button-login {
 	width: 100%;
   	display: inline-block;
   	border-radius: 0;
@@ -82,7 +209,7 @@ button.button {
   	cursor: pointer;
 }
 
-button.button span {
+button.button-login span {
   	cursor: pointer;
   	display: inline-block;
   	position: relative;
@@ -94,9 +221,15 @@ a.btn{
 	width: auto;
 }
 
+
 /* on destop */
-@media only screen and (min-width: 768px){
-	button.button span:after {
+@media only screen and (min-width: 1200px){
+	div.footer-header{
+		background-color: #f9f9f9;
+		text-align: center;
+	}
+
+	button.button-login span:after {
 	  	content: '\00bb';
 	  	position: absolute;
 	  	opacity: 0;
@@ -105,46 +238,75 @@ a.btn{
 	  	transition: 0.5s;
 	}
 
-	button.button:hover{
+	button.button-login:hover{
 		background-color: #FF6865;
 	}
 
-	button.button:hover span {
+	button.button-login:hover span {
 	  	padding-right: 25px;
 	}
 
-	button.button:hover span:after {
+	button.button-login:hover span:after {
 	 	opacity: 1;
 	  	right: 0;
 	}
+}
+
+/* when size laptop*/
+@media only screen and (max-width: 1200px) and (min-width: 990px){
+	input[type=email] {
+		width: 100%;
+	}
+
+	button.button-email{
+		width: 100%;
+	}
+
+
+	section.copy-right{
+		background-color: #333333;
+		color: #cecece;
+	}
+
+	div.footer-footer{
+		padding-bottom: 10px;
+	}
 
 	.navbar-default{
-		background: rgba(0,0,0,0.03);
-		box-shadow: none;
-		border: 0;
-		margin: 0 0 250px 0;
-		border-radius: 0;
+		margin: 0 0 285px 0;
+	}
+}
+
+
+/* when size laptop and taplet*/
+@media only screen and (max-width: 990px) and (min-width: 768px){
+	.navbar-default{
+		margin: 0 0 35px 0;
 	}
 
-	.top-jumbotron{
-		padding-top: 80px;
-		display: block;
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
+	section.copy-right{
+		background-color: #333333;
+		color: #cecece;
 	}
-
+	div.footer-header{
+		text-align: center;
+		background-color: #f9f9f9;
+	}
 }
 
 
 /* on moble */
 @media only screen and (max-width: 768px){
-	footer{
-		position: fixed;
-		bottom: 0;
-		left: 0;
+	body{
+		padding-top: 60px;
+	}
+
+	input[type=email] {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	button.button-email{
 		width: 100%;
 	}
 
@@ -186,7 +348,43 @@ a.btn{
 		width: 100%;
 	}
 
-	.top-jumbotron{
-		display: none;
+	section.copy-right{
+		background-color: #333333;
+		color: #cecece;
 	}
+
+	div.footer-header{
+		background-color: #333333;
+	}
+
+	div.text-invitation{
+		color: #cecece;
+		text-align: center;
+	}
+
+	div.text-invitation h3{
+		color: #986fbc;
+	}
+
+	div.text-invitation p{
+		font-size: 16px;
+	}
+
+	.navbar-default{
+		border: 0;
+		background: rgb(239, 239, 239);
+		overflow-y: none;
+	}
+
+	.navbar-hidden-when-scroll-mb{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		transition: top 0.2s ease-in-out;
+	}
+
+	.navbar-collapse{
+		border-top: 0;
+	}
+
 }
